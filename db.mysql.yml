@@ -5,7 +5,7 @@ services:
       MOODLE_DOCKER_DBTYPE: mysqli
       MOODLE_DOCKER_DBCOLLATION: utf8mb4_bin
   db:
-    image: mysql:5
+    image: mysql:5.5
     volumes:
       - "./mysql/etc/mysql/conf.d/moodle.conf:/etc/mysql/conf.d/moodle.conf"
     environment:
