@@ -8,6 +8,7 @@ environment:
 
 install:
   - choco install docker-compose
+  - ps: "& $Env:ProgramFiles\\Docker\\Docker\\DockerCli.exe -SwitchDaemon"
 
 test_script:
   - bin\moodle-docker-compose.cmd pull
