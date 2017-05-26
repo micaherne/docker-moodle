@@ -1,4 +1,4 @@
-version: "2"
+version: "2.1"
 services:
   webserver:
     image: danpoltawski/moodle-php-apache:7.1
