@@ -1,0 +1,13 @@
+version: 1.0.{build}
+build: off
+image: Visual Studio 2017
+
+environment:
+  MOODLE_DOCKER_DB: pgsql
+  MOODLE_DOCKER_WWWROOT: c:\projects\moodle
+
+install:
+  - choco install docker-compose
+
+test_script:
+  - bin\moodle-docker-compose.cmd pull
